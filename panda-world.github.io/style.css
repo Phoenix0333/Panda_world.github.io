@@ -1,0 +1,133 @@
+/* Общие стили (базовые) */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5{
+text-align: center;
+}
+/* Header */
+header {
+    width: 100%;
+    min-height: 60px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+     margin-right: auto; /* Сдвигаем заголовок вправо */
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+    margin-right: 10px; /* Отступ между лого и текстом */
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Main */
+main {
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section */
+section {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    min-height: 40px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+p {
+    font-weight: 600;
+}
+
+/* Медиазапросы для телефонов */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        min-height: 50px;
+        padding: 5px 10px;
+    }
+
+    #logo {
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+   main {
+        padding: 5px 10px;
+    }
+     footer {
+      font-size: 0.8em;
+     }
+}
+
+/* Медиазапросы для ПК */
+@media (min-width: 768px) {
+     body {
+        font-size: 16px;
+    }
+    header {
+        min-height: 80px;
+        padding: 20px;
+    }
+
+    #logo {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+      main {
+        padding: 20px;
+    }
+    footer {
+       font-size: 1em;
+    }
+}
